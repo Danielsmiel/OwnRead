@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background">
+
+    <RelativeLayout
+        android:id="@+id/control_frag_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/control_frag_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fork" />
+
+        <Button
+            android:id="@+id/control_frag_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/control_logo_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control_frag_top">
+
+        <ImageView
+            android:id="@+id/logo_rl_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/weread_horizontal" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_rl_iv"
+            android:layout_marginTop="25dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/control_logo2"
+                android:background="@color/lightgray_logo"
+                android:paddingRight="5dp" />
+
+            <ImageView
+                android:id="@+id/control_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/weread_signature" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/control_logo2"
+                android:background="@color/lightgray_logo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control_logo_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/control_frag_fristpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="首    页"
+
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/control_frag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:text="文    字"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/control_frag_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:text="声    音"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/control_frag_meida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:text="影    音"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/control_frag_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:text="单向历"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+    </LinearLayout>
+</RelativeLayout>

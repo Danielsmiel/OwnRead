@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray_background">#313131</color>
+    <color name="lightgray_logo">#4A4A4A</color>
+    <color name="control_text_color_white">#F2F2F2</color>
+    <color name="control_lv_color">#F8F7F5</color>
+    <color name="base_color">#F8F7F5</color>
+    <color name="golden_bar">#CEAD53</color>
+    <color name="lv_topbar">#202020</color>
+    <color name="author_text">#9B9B9B</color>
+    <color name="music_bottom">#9fffffff</color>
+    <color name="seekbar_color">#92928E</color>
+    <color name="white">#FFFFFF</color>
+</resources>

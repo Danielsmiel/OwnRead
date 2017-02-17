@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    tools:context="com.example.user.ownread.activity.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/search_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/lv_topbar">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_back"
+            android:onClick="back" />
+
+        <TextView
+            android:id="@+id/search_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜   索"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_edit_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/search_top_rl">
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/search_clear_btn"
+            android:background="@drawable/search_et_shape"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="35dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search_logo" />
+
+        <Button
+            android:id="@+id/search_clear_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:text="取消"
+            android:textColor="@color/author_text"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/author_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_hot_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_edit_rl"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="热门搜索"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/search_hot_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_hot_tv"
+        android:divider="#00000000" />
+
+    <ListView
+        android:id="@+id/search_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_edit_rl"
+        android:background="@color/base_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/search_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_edit_rl"
+        android:background="@color/base_color"
+        android:gravity="center"
+        android:text="没有搜索结果"
+        android:textColor="#000"
+        android:visibility="gone" />
+</RelativeLayout>

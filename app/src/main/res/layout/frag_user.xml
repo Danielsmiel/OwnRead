@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background">
+
+    <RelativeLayout
+        android:id="@+id/user_frag_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/user_frag_close_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/fork" />
+
+        <Button
+            android:id="@+id/user_frag_setting_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/setting" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/user_frag_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_frag_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/avater_default"
+        android:padding="10dp"
+        android:text="登录"
+        android:textColor="@color/base_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_frag_login_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_frag_message_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:text="消   息"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/user_frag_collection_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:text="收   藏"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/user_frag_offline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:text="离   线"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/frag_user_note_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:text="笔   记"
+            android:textColor="@color/control_text_color_white"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/logo_owspace" />
+</RelativeLayout>
